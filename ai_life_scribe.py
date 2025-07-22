@@ -2,19 +2,16 @@ import openai
 import os
 import json
 
-# ==== CONFIGURATION ====
 
-# Set your OpenAI API key here, or via environment variable
+
 openai.api_key = os.getenv("OPENAI_API_KEY") or "your-api-key-here"
 
-# === STYLES ===
 STYLE_PROMPTS = {
     "hemingway": "Write in the style of Ernest Hemingway. Use short, direct, and emotional sentences. Be minimal and impactful.",
     "austen": "Write in the witty and elegant style of Jane Austen. Use 19th-century English and refined phrasing.",
     "tolkien": "Narrate the day's events as an epic tale in the style of J.R.R. Tolkien. Use poetic, noble, and fantastical language."
 }
 
-# === EXAMPLE INPUT DATA ===
 
 example_calendar = [
     { "time": "09:00", "event": "Team standup" },
@@ -28,7 +25,6 @@ Felt anxious in the morning. The client meeting was tense but productive.
 Had dinner with Emma, talked about old times. Laughed a lot.
 """
 
-# === BUILD PROMPT ===
 
 def build_prompt(calendar_data, notes_text, style_name):
     style_prompt = STYLE_PROMPTS.get(style_name.lower(), STYLE_PROMPTS["hemingway"])
@@ -47,7 +43,6 @@ Write a diary entry for today.
 """
     return prompt.strip()
 
-# === GENERATE DIARY ===
 
 def generate_diary_entry(calendar_data, notes_text, style):
     prompt = build_prompt(calendar_data, notes_text, style)
@@ -65,7 +60,6 @@ def generate_diary_entry(calendar_data, notes_text, style):
     except Exception as e:
         return f"❌ Error: {e}"
 
-# === MAIN FUNCTION ===
 
 def main():
     print("Welcome to AI Life Scribe 📝")
@@ -81,7 +75,6 @@ def main():
     print("\n📖 Your AI-generated diary entry:\n")
     print(diary)
 
-# === RUN ===
 
 if __name__ == "__main__":
     main()
