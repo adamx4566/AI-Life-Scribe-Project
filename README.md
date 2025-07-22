@@ -1,5 +1,3 @@
-Here is your GitHub-style README for the **AI-Skryba Życia** project, following the provided format:
-
 ---
 
 # AI Life Scribe
@@ -33,7 +31,7 @@ Use cases:
 * Mental health journaling
 * Artists and writers collecting inspiration
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Diary_with_feather_pen.jpg" width="400">
+<img src="[https://upload.wikimedia.org/wikipedia/commons/f/f4/Diary_with_feather_pen.jpg](https://images.stockcake.com/public/c/1/7/c17400a1-6be5-49de-af81-70e091460abb/vintage-writing-experience-stockcake.jpg)" width="400">
 
 Sample styles:
 
