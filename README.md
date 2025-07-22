@@ -103,4 +103,13 @@ To move forward:
 * Diary image: [Diary with Feather Pen](https://commons.wikimedia.org/wiki/File:Diary_with_feather_pen.jpg) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 * Literary styles based on public domain authors and creative homage
 
+## 🛠️ Quick Install & Run
+
+### 1. Install dependencies
+
+```bash
+pip install openai
+Linux/macOS: export OPENAI_API_KEY="sk-xxxxxxxxxxxxxxxx"
+Windows (PowerShell): $env:OPENAI_API_KEY="sk-xxxxxxxxxxxxxxxx"
+python ai_life_scribe.py
 ---
